@@ -1,12 +1,10 @@
 
 <template>
         <div class = "postlist">
-            <div>
-                <div :class="{loading:(isLoading == false)}">
-                    <h1>正在加载</h1>
-                </div>
+            <div v-if="isLoading">
+                <h1>正在加载</h1>
             </div>
-            <div>
+            <div v-else>
                 <ul>
                     <li class="topBar">
                         
